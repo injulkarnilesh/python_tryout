@@ -1,4 +1,3 @@
-import matplotlib.pyplot as pPlot
 from wordcloud import WordCloud, STOPWORDS
 import numpy as npy
 import random as random
