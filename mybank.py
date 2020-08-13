@@ -4,7 +4,7 @@ class Account :
         self.balance = balance
         self.min_balance = min_balance
 
-    def deposite(self, amount) :
+    def deposit(self, amount) :
         self.balance += amount
 
     def withdraw(self, amount) :
@@ -41,7 +41,7 @@ class Saving_Account(Account) :
 hdfc_account = Saving_Account("Nilesh", 100)
 print(hdfc_account)
 
-hdfc_account.deposite(200)
+hdfc_account.deposit(200)
 print(hdfc_account)
 
 hdfc_account.withdraw(150)
@@ -57,7 +57,7 @@ citi_account.statement()
 citi_account.withdraw(400)
 print(citi_account)
 
-citi_account.deposite(9400)
+citi_account.deposit(9400)
 print(citi_account)
 
 citi_account.withdraw(15000)

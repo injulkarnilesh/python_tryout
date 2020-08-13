@@ -1,33 +1,33 @@
 
 people = { "Harry" : 45, "Ron" : 33, "Hermione" : 39 }
 
-print(people, type(people))
-print(people.keys(), type(people.keys()))
-print(people.values(), type(people.values()))
+print(people, type(people)) #<class 'dict'>
+print(people.keys(), type(people.keys())) #<class 'dict_keys'>
+print(people.values(), type(people.values())) #<class 'dict_values'>
 
-print(people["Harry"])
+print(people["Harry"]) #45
 
 #not a list
 #people.keys()[0]
 #peope.values()[2]
 
-print(list(people.keys())[1])
-print(list(people.values())[0])
+print(list(people.keys())[1]) #Ron
+print(list(people.values())[0]) #45
 
 #error
 #print(people["Voldemort"])
 
 people["Ron"] = 34
-print(people["Ron"])
+print(people["Ron"]) #34
 
 people["Severus"] = 90
-print(people)
+print(people) # Severus added
 
 people["Dumbledore"] = "TOO OLD"
-print(people)
+print(people) #Dumbledore Added
 
 they = { "US" : ["Alex", "001", 12], "IN" : ["Nilesh", "003", 43] }
-print(they["IN"][1:])
+print(they["IN"][1:]) #["003", 43]
 
 westeros = {
         "Tyrian" : { "House" : "Lannister", "Age" : 39, "Alive" : True },
@@ -35,7 +35,7 @@ westeros = {
         "Jon" : { "House" : "Stark", "Age" : 31, "Alive" : False },
         "Lyanna" : {"House" : "Bear Island", "Age" : 14, "Alive" : True }
     }
-print(westeros["Lyanna"]["House"])
+print(westeros["Lyanna"]["House"]) #Bear Island
 print(westeros)
 westeros["Jon"]["Alive"] = True
 print(westeros)

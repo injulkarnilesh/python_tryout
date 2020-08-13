@@ -91,4 +91,6 @@ del myRupee
 del myFiftyPaise
 del myTenRupee
 
+print(myFiftyPaise) #myFiftyPaise is not defined
+
 

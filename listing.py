@@ -2,11 +2,15 @@ people = [ "Nilesh", "Rahul", "Gaurav" ]
 new_people = [ "Satish",  "Sangram" ]
 people = people + new_people;
 people[3] = "Karan"
-print(people);
+print(people)
+# ['Nilesh', 'Rahul', 'Gaurav', 'Karan', 'Sangram']
+
 print(people[0], people[2]);
+# Nilesh Gaurav
 
 variant_list = ["Injulkar", 23, 3.4, "Kolhapur", True]
-print(variant_list);
+print(variant_list)
+# ['Injulkar', 23, 3.4, 'Kolhapur', True]
 
 name = input("What's your name ?").strip()
 if name in people :
@@ -25,7 +29,7 @@ if name in people :
 else :
     add_me = input("Would you like to add yourself ? ").strip().lower()[0]
     if add_me == 'y' :
-        at_index = input("You have pecific index in mind ? ").strip().lower()[0]
+        at_index = input("You have specific index in mind ? ").strip().lower()[0]
         if at_index =='y' :
             index = int(input("Enter index ?").strip())
             if index >= 0 and index <= len(people) :

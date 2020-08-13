@@ -23,19 +23,29 @@ function_default(job = "Plumber", name = "Abhijit")
 # * on arg -> unpacking, iterable arg is passed as multiple params
 
 #unpacking tuple
-print(1, 2, 3)
-print(*(1, 2, 3))
+print(1, 2, 3) #1 2 3
+print(*(1, 2, 3)) # 1 2 3
 
-print("ABC")
- # equivalent to
-print(*"ABC")
+print("ABC") #ABC
+print(*"ABC") #A B C
 
 def new_line_print(*lines) :
     for line in lines :
         print(line)
 
 new_line_print("NILESH", "SHRIPATI", "INJULKAR")
+# NILESH
+# SHRIPATI
+# INJULKAR
+
 new_line_print(*"pirate")
+# p
+# i
+# r
+# a
+# t
+# e
+# s
 
 #packing
 def add(*numbers) :
@@ -44,8 +54,8 @@ def add(*numbers) :
         total += number
     return total
 
-print("Adding multiple args", add(1, 4, 10, 34))
-print("Adding iterable", add(*[1, 4, 10, 34]))
+print("Adding multiple args", add(1, 4, 10, 34)) #49
+print("Adding iterable", add(*[1, 4, 10, 34])) #49
 
 # ** on param -> packing, function treats all args into single dictionary
 # ** on arg -> unpacking, dictionary is passed as keyword arguments
@@ -61,4 +71,3 @@ expand(name = "Gaurav", age = 34, job = "Series Watcher")
 expand(**{ "name" : "Rahul", "age" : 12, "job" : "Kid"})
 
 function_default(**{ "name" : "Pratik", "age" : 56, "job" : "IAS" })
-

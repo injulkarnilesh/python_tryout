@@ -15,8 +15,8 @@ print("RedMi", redmi.battery)
 print("RedMi", redmi.os)
 
 samsung.screen_size = 4.5
-print("Samsung", samsung.screen_size)
-print("RedMi", redmi.screen_size)
+print("Samsung", samsung.screen_size) # 4.5
+print("RedMi", redmi.screen_size) # 5
 
 
 class MyCoin :
